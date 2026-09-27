@@ -1,0 +1,25 @@
+import okhttp.client.okHttpClientNew
+import okhttp.client.requestBuilderNew
+import okhttp.client.OkHttpClient
+import okhttp.client.RequestBuilder
+import okhttp.client.Request
+import okhttp.client.Call
+import okhttp.client.Response
+
+main() {
+  OkHttpClient client = okHttpClientNew()!!
+  RequestBuilder builder = requestBuilderNew()!!
+  Request request = builder.url("http://127.0.0.1:18765/greeting")!!.get()!!.build()!!
+  Call call = client.newCall(request)!!
+  Response response = call.execute()!!
+  try {
+    printLine(response.code())
+    printLine(response.body()!!.string()!!)
+  } finally {
+    response.close()
+  }
+}
+
+Module module() {
+  module(dependencies: [dependency(repository: "github", name: "okhttp.client", version: 2)])
+}
