@@ -21,5 +21,5 @@ main() {
 }
 
 Module module() {
-  module(dependencies: [dependency(repository: "github", name: "okhttp.client", version: 2)])
+  module(dependencies: [dependency(repository: "github", name: "okhttp.client", version: 3)])
 }

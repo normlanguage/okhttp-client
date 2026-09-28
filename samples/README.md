@@ -22,3 +22,5 @@ Hello from local server
 ```
 
 Stop the server with Ctrl+C. It only listens on `127.0.0.1:18765`. [module.norm](../okhttp/client/module.norm) pins the Java artifact and defines the public API.
+
+The [acceptance example](../examples/sample/okhttp/client/Main.norm) checks request headers and client configuration without an external service.

@@ -1,4 +1,11 @@
-package okhttp.client
+package sample.okhttp.client
+
+import okhttp.client.RequestBuilder
+import okhttp.client.requestBuilderNew
+import okhttp.client.Request
+import okhttp.client.OkHttpClientBuilder
+import okhttp.client.okHttpClientBuilderNew
+import okhttp.client.OkHttpClient
 
 import std.time.Duration
 import std.time.duration

@@ -22,3 +22,5 @@ Hello from local server
 ```
 
 按 Ctrl+C 停止服务。服务仅监听 `127.0.0.1:18765`。[module.norm](../okhttp/client/module.norm) 指定 Java 制品版本并定义公开 API。
+
+[验收示例](../examples/sample/okhttp/client/Main.norm)在不连接外部服务的情况下验证请求头和客户端配置。
