@@ -5,10 +5,13 @@ import okhttp.client.requestBuilderNew
 import okhttp.client.Request
 import okhttp.client.OkHttpClient`r`nimport okio.ByteStringBuilder
 import okhttp.client.okHttpClientBuilderNew
-import okhttp.client.OkHttpClient`r`nimport okio.ByteString
+import okhttp.client.OkHttpClient
+import okio.ByteString
 
 
-private Void retainOkio(ByteString? value) {}`r`n`r`nVoid main() {
+private Void retainOkio(ByteString? value) {}
+
+Void main() {
   RequestBuilder? builder = requestBuilderNew()
   if builder != null {
     Request? request =
