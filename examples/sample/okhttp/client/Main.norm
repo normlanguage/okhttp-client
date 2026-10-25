@@ -3,13 +3,12 @@ package sample.okhttp.client
 import okhttp.client.RequestBuilder
 import okhttp.client.requestBuilderNew
 import okhttp.client.Request
-import okhttp.client.OkHttpClient`r`nimport okio.ByteStringBuilder
+import okhttp.client.OkHttpClientBuilder
 import okhttp.client.okHttpClientBuilderNew
 import okhttp.client.OkHttpClient
 import okio.ByteString
 
-
-private Void retainOkio(ByteString? value) {}
+Void retainOkio(ByteString? value) {}
 
 Void main() {
   RequestBuilder? builder = requestBuilderNew()
