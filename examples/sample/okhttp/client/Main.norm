@@ -7,8 +7,6 @@ import okhttp.client.OkHttpClientBuilder
 import okhttp.client.okHttpClientBuilderNew
 import okhttp.client.OkHttpClient
 
-import std.time.Duration
-import std.time.duration
 
 Void main() {
   RequestBuilder? builder = requestBuilderNew()
@@ -23,8 +21,7 @@ Void main() {
 
   OkHttpClientBuilder? clientBuilder = okHttpClientBuilderNew()
   if clientBuilder != null {
-    Duration? timeout = durationOfSeconds(5)
-    OkHttpClient? client = clientBuilder.callTimeout(timeout)?.followRedirects(true)?.build()
+    OkHttpClient? client = clientBuilder.followRedirects(true)?.build()
     if client != null {
       printLine(client.callTimeoutMillis())
       printLine(client.followRedirects())
