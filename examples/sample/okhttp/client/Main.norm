@@ -23,7 +23,7 @@ Void main() {
 
   OkHttpClientBuilder? clientBuilder = okHttpClientBuilderNew()
   if clientBuilder != null {
-    Duration timeout = durationOfSeconds(seconds: 5)
+    Duration? timeout = durationOfSeconds(5)
     OkHttpClient? client = clientBuilder.callTimeout(timeout)?.followRedirects(true)?.build()
     if client != null {
       printLine(client.callTimeoutMillis())
