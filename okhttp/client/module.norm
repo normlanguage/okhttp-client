@@ -2,7 +2,7 @@ Module module() {
   return module(
     name: "okhttp.client",
     version: 3,
-    exports: ["RequestBuilder", "requestBuilderNew", "Request", "OkHttpClientBuilder", "okHttpClientBuilderNew", "OkHttpClient"],
+    exports: ["RequestBuilder", "Request", "OkHttpClientBuilder", "OkHttpClient"],
     binding: jarBinding(
       target: mavenJar(
         group: "com.squareup.okhttp3",
