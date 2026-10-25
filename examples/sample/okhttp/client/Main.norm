@@ -6,9 +6,9 @@ import okhttp.client.Request
 import okhttp.client.OkHttpClientBuilder
 import okhttp.client.okHttpClientBuilderNew
 import okhttp.client.OkHttpClient
+import okio.ByteString
 
-import std.time.Duration
-import std.time.duration
+Void retainOkio(ByteString? value) {}
 
 Void main() {
   RequestBuilder? builder = requestBuilderNew()
@@ -23,8 +23,7 @@ Void main() {
 
   OkHttpClientBuilder? clientBuilder = okHttpClientBuilderNew()
   if clientBuilder != null {
-    Duration timeout = duration(seconds: 5, nanoseconds: 0)
-    OkHttpClient? client = clientBuilder.callTimeout(timeout)?.followRedirects(true)?.build()
+    OkHttpClient? client = clientBuilder.followRedirects(true)?.build()
     if client != null {
       printLine(client.callTimeoutMillis())
       printLine(client.followRedirects())

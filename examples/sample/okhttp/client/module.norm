@@ -2,6 +2,8 @@ Module module() {
   return module(
     name: "sample.okhttp.client",
     version: 1,
-    dependencies: [dependency(repository: "github", name: "okhttp.client", version: 3)]
+    dependencies: [dependency(repository: "github", name: "okhttp.client", version: 4), dependency(repository: "github", name: "okio", version: 3)]
   )
 }
+
+

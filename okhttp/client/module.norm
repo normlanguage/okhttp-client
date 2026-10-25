@@ -1,7 +1,9 @@
 Module module() {
   return module(
     name: "okhttp.client",
-    version: 3,
+    version: 4,
+    dependencies: [exportedDependency(repository: "github", name: "okio", version: 3)],
+    exports: ["RequestBuilder", "Request", "OkHttpClientBuilder", "OkHttpClient"],
     binding: jarBinding(
       target: mavenJar(
         group: "com.squareup.okhttp3",
@@ -114,3 +116,5 @@ Module module() {
     )
   )
 }
+
+
