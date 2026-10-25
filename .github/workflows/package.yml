@@ -15,9 +15,10 @@ permissions:
 
 jobs:
   package:
-    uses: normlanguage/registry/.github/workflows/package.yml@9b6f44d78c1de4f25fe8c610a751db460f639567
+    uses: normlanguage/registry/.github/workflows/package.yml@618b7b420da2a5cbfab775c36fc7a3fab4884b06
     with:
       norm-version: 0.27.12
+
 
 
 
